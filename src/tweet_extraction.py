@@ -5,6 +5,7 @@ import tweepy
 import config
 from tqdm import tqdm
 import re
+import os
 
 def get_user_tweets(api, twitter_username):
     # extract
@@ -30,6 +31,11 @@ def get_user_tweets(api, twitter_username):
     return df_tweets
 
 def extract_tweets():
+    # initialize data folder path
+    if not os.path.exists('../data/'):
+        os.makedirs('../data/')
+
+    # twitter authentication
     auth = tweepy.OAuth1UserHandler(config.API_KEY, config.API_SECRET_KEY, config.ACCESS_TOKEN, config.SECRET_TOKEN)
     api = tweepy.API(auth)
 
