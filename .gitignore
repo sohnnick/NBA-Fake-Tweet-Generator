@@ -1,3 +1,4 @@
-/Notebook/config.py
-/Notebook/__pycache__
-/Notebook/.ipynb_checkpoints
+/notebook/config.py
+/notebook/__pycache__
+/notebook/.ipynb_checkpoints
+/models/
