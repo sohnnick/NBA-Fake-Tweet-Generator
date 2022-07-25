@@ -1,4 +1,7 @@
 /notebook/config.py
 /notebook/__pycache__
 /notebook/.ipynb_checkpoints
+/notebook/.DS_Store
+.DS_Store
 /models/
+/src/config.py
